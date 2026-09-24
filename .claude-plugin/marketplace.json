@@ -1,0 +1,35 @@
+{
+  "name": "dataviz-skills",
+  "owner": {
+    "name": "Yan Holtz",
+    "url": "https://www.yan-holtz.com"
+  },
+  "metadata": {
+    "description": "Data visualization skills for AI coding agents",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dataviz-theory",
+      "description": "Tool-agnostic dataviz skills: chart type, color, maps",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./dataviz-theory/chart-type",
+        "./dataviz-theory/color",
+        "./dataviz-theory/maps"
+      ]
+    },
+    {
+      "name": "dataviz-tech",
+      "description": "Library-specific dataviz skills: D3 + React, ggplot2, Matplotlib",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./dataviz-tech/d3-react",
+        "./dataviz-tech/ggplot2",
+        "./dataviz-tech/matplotlib"
+      ]
+    }
+  ]
+}

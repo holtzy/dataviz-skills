@@ -1,0 +1,25 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check frontmatter
+        run: |
+          status=0
+          for dir in dataviz-*/*/; do
+            name="$(basename "$dir")"
+            file="${dir}SKILL.md"
+            if [ ! -f "$file" ]; then echo "::error::$name has no SKILL.md"; status=1; continue; fi
+            fm_name="$(awk '/^---$/{n++; next} n==1 && /^name:/{sub(/^name:[ ]*/, ""); print; exit}' "$file")"
+            fm_desc="$(awk '/^---$/{n++; next} n==1 && /^description:/{print; exit}' "$file")"
+            [ "$fm_name" = "$name" ] || { echo "::error file=$file::name '$fm_name' does not match folder '$name'"; status=1; }
+            [ -n "$fm_desc" ] || { echo "::error file=$file::missing description"; status=1; }
+            grep -q "${dir}SKILL.md" AGENTS.md || { echo "::error::$name is missing from AGENTS.md"; status=1; }
+          done
+          exit $status
