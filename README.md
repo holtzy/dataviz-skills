@@ -8,6 +8,7 @@ These skills follow the open [Agent Skills](https://agentskills.io) standard (`S
 
 > 🚧 **Work in progress.** The structure is in place, and the skills are being written.
 
+
 ## Available Skills
 
 ### Dataviz Theory
