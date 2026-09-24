@@ -11,19 +11,19 @@ These skills follow the open [Agent Skills](https://agentskills.io) standard (`S
 
 ## Available Skills
 
-### Dataviz Theory
+### Dataviz Design
 
 Tool-agnostic skills: the principles behind a good chart. Useful whatever you build it with, from D3 to Excel.
 
-- **[chart-type](./dataviz-theory/chart-type/)** - Pick the right chart for your data and your question, following the [data-to-viz.com](https://www.data-to-viz.com) decision tree
-- **[color](./dataviz-theory/color/)** - Choose a purposeful, colorblind-safe palette (categorical, sequential, diverging) and use color to highlight what matters
-- **[maps](./dataviz-theory/maps/)** - Visualize geographic data: choropleth, bubble map, hexbin, cartogram or connection map, and when to use which
+- **[chart-type](./dataviz-design/chart-type/)** - Pick the right chart for your data and your question, following the [data-to-viz.com](https://www.data-to-viz.com) decision tree
+- **[color](./dataviz-design/color/)** - Choose a purposeful, colorblind-safe palette (categorical, sequential, diverging) and use color to highlight what matters
+- **[maps](./dataviz-design/maps/)** - Visualize geographic data: choropleth, bubble map, hexbin, cartogram or connection map, and when to use which
 
 ### Dataviz Tech
 
 Library-specific skills: build and polish charts with your tool of choice.
 
-- **[d3-react](./dataviz-tech/d3-react/)** - Build charts with D3.js inside React / Next.js: D3 for the math, React for the rendering, with responsiveness, axes, tooltips and transitions
+- **[d3](./dataviz-tech/d3/)** - Build charts with D3.js inside React / Next.js: D3 for the math, React for the rendering, with responsiveness, axes, tooltips and transitions
 - **[ggplot2](./dataviz-tech/ggplot2/)** - Create publication-ready charts in R with ggplot2: themes, fonts, annotations, direct labels and export
 - **[matplotlib](./dataviz-tech/matplotlib/)** - Create publication-ready charts in Python with Matplotlib and Seaborn: clean styling, annotations, direct labels and export
 
@@ -64,7 +64,7 @@ Then browse and install the skill categories you need through the Claude Code UI
 Install a whole category directly:
 
 ```
-/plugin install dataviz-theory@dataviz-skills
+/plugin install dataviz-design@dataviz-skills
 /plugin install dataviz-tech@dataviz-skills
 ```
 
@@ -113,7 +113,7 @@ jittered points will show both the summary and the individual salaries...
 
 | Category | Description |
 | --- | --- |
-| **dataviz-theory** | Tool-agnostic dataviz principles (chart type, color, maps) |
+| **dataviz-design** | Tool-agnostic dataviz principles (chart type, color, maps) |
 | **dataviz-tech** | Library-specific skills (D3 + React, ggplot2, Matplotlib) |
 
 ## Want to go deeper?
@@ -122,11 +122,11 @@ Each tech skill is the condensed version of a full course:
 
 | Skill | Gallery | Course |
 | --- | --- | --- |
-| **d3-react** | [React Graph Gallery](https://www.react-graph-gallery.com) | [D3 Loves React](https://www.react-graph-gallery.com/course) |
+| **d3** | [React Graph Gallery](https://www.react-graph-gallery.com) | [D3 Loves React](https://www.d3-loves-react.com) |
 | **ggplot2** | [R Graph Gallery](https://r-graph-gallery.com) | [ggplot2 Uncharted](https://www.ggplot2-uncharted.com) |
 | **matplotlib** | [Python Graph Gallery](https://python-graph-gallery.com) | [Matplotlib Journey](https://www.matplotlib-journey.com) |
 
-The theory skills build on [data-to-viz.com](https://www.data-to-viz.com).
+The design skills build on [data-to-viz.com](https://www.data-to-viz.com).
 
 ## Contributing
 

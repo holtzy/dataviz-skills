@@ -21,7 +21,7 @@ jobs:
             name="$(basename "$skill")"
             (cd "$(dirname "$skill")" && zip -r "../dist/${name}.zip" "$name" -x '*.DS_Store')
           done
-          zip -r dist/dataviz-skills-all.zip dataviz-theory dataviz-tech -x '*.DS_Store'
+          zip -r dist/dataviz-skills-all.zip dataviz-design dataviz-tech -x '*.DS_Store'
 
       - name: Publish release
         env:

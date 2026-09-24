@@ -10,14 +10,14 @@
   },
   "plugins": [
     {
-      "name": "dataviz-theory",
+      "name": "dataviz-design",
       "description": "Tool-agnostic dataviz skills: chart type, color, maps",
       "source": "./",
       "strict": false,
       "skills": [
-        "./dataviz-theory/chart-type",
-        "./dataviz-theory/color",
-        "./dataviz-theory/maps"
+        "./dataviz-design/chart-type",
+        "./dataviz-design/color",
+        "./dataviz-design/maps"
       ]
     },
     {
@@ -26,7 +26,7 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./dataviz-tech/d3-react",
+        "./dataviz-tech/d3",
         "./dataviz-tech/ggplot2",
         "./dataviz-tech/matplotlib"
       ]

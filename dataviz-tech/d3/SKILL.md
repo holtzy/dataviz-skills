@@ -1,5 +1,5 @@
 ---
-name: d3-react
+name: d3
 description: Use when building or fixing a chart with D3.js inside a React or Next.js component.
 ---
 
