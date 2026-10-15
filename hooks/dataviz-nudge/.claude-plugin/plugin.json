@@ -1,0 +1,9 @@
+{
+  "name": "dataviz-nudge",
+  "description": "Claude Code hook: before the agent writes chart or map code, make sure it has loaded the dataviz design skills (inspiration, chart-type, maps, color) and the matching library skill. Denies the first such call once per session; retries go through.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Joël Gombin & Yan Holtz"
+  },
+  "license": "MIT"
+}
