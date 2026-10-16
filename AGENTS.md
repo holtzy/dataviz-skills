@@ -9,6 +9,7 @@ This repository contains data visualization skills. If your tool does not load `
 | chart-type | Deciding which chart type fits a dataset or a question. | [dataviz-design/chart-type/SKILL.md](dataviz-design/chart-type/SKILL.md) |
 | color | Choosing colors or a palette for a chart. | [dataviz-design/color/SKILL.md](dataviz-design/color/SKILL.md) |
 | maps | Visualizing geographic data. | [dataviz-design/maps/SKILL.md](dataviz-design/maps/SKILL.md) |
+| inspiration | Before drawing a chart or map: find published references to borrow ideas from (dataviz-inspiration.com, Dataviz Index), and cite them. | [dataviz-design/inspiration/SKILL.md](dataviz-design/inspiration/SKILL.md) |
 
 ## Dataviz Tech
 

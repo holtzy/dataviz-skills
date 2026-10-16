@@ -11,13 +11,14 @@
   "plugins": [
     {
       "name": "dataviz-design",
-      "description": "Tool-agnostic dataviz skills: chart type, color, maps",
+      "description": "Tool-agnostic dataviz skills: chart type, color, maps, inspiration",
       "source": "./",
       "strict": false,
       "skills": [
         "./dataviz-design/chart-type",
         "./dataviz-design/color",
-        "./dataviz-design/maps"
+        "./dataviz-design/maps",
+        "./dataviz-design/inspiration"
       ]
     },
     {
@@ -30,6 +31,11 @@
         "./dataviz-tech/ggplot2",
         "./dataviz-tech/matplotlib"
       ]
+    },
+    {
+      "name": "dataviz-nudge",
+      "description": "Claude Code hook: before the agent writes chart or map code, make sure it has loaded the dataviz design skills. Denies the first such call once per session; retries go through.",
+      "source": "./hooks/dataviz-nudge"
     }
   ]
 }

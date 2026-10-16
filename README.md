@@ -18,6 +18,7 @@ Tool-agnostic skills: the principles behind a good chart. Useful whatever you bu
 - **[chart-type](./dataviz-design/chart-type/)** - Pick the right chart for your data and your question, following the [data-to-viz.com](https://www.data-to-viz.com) decision tree
 - **[color](./dataviz-design/color/)** - Choose a purposeful, colorblind-safe palette (categorical, sequential, diverging) and use color to highlight what matters
 - **[maps](./dataviz-design/maps/)** - Visualize geographic data: choropleth, bubble map, hexbin, cartogram or connection map, and when to use which
+- **[inspiration](./dataviz-design/inspiration/)** - Before drawing, find 3–5 published charts to borrow ideas from, searched across [dataviz-inspiration.com](https://www.dataviz-inspiration.com) and [Dataviz Index](https://datavizindex.fr), and cite them with links back to each source (co-authored with [Joël Gombin](https://github.com/joelgombin))
 
 ### Dataviz Tech
 
@@ -66,7 +67,10 @@ Install a whole category directly:
 ```
 /plugin install dataviz-design@dataviz-skills
 /plugin install dataviz-tech@dataviz-skills
+/plugin install dataviz-nudge@dataviz-skills
 ```
+
+`dataviz-nudge` is not a skill but a Claude Code hook, see [Making sure the skills are used](#making-sure-the-skills-are-used-claude-code).
 
 #### Method 3: Manual Installation
 
@@ -109,11 +113,21 @@ Claude: Since you want to compare distributions across groups, a boxplot with
 jittered points will show both the summary and the individual salaries...
 ```
 
+### Making sure the skills are used (Claude Code)
+
+Agents pick skills from their description at the start of a task. Once busy fetching and cleaning
+data, they often jump straight to plotting code without loading any. The optional
+**[dataviz-nudge](./hooks/dataviz-nudge/)** plugin fixes that: when the agent is about to write
+chart or map code (Matplotlib, ggplot2, D3, plotly, Vega, Leaflet…) and no design skill has been
+loaded in the session, the call is denied **once**, with a reason naming the skills to load
+(`inspiration`, `chart-type`, `maps`, `color`, and the matching library skill). A retry goes
+through, so it never locks anyone out. Opt out with `DATAVIZ_NUDGE=off`.
+
 ## Skill Categories
 
 | Category | Description |
 | --- | --- |
-| **dataviz-design** | Tool-agnostic dataviz principles (chart type, color, maps) |
+| **dataviz-design** | Tool-agnostic dataviz principles (chart type, color, maps) and published references (inspiration) |
 | **dataviz-tech** | Library-specific skills (D3 + React, ggplot2, Matplotlib) |
 
 ## Want to go deeper?
@@ -139,9 +153,28 @@ While editing skills, symlink them into your global skills folder so every proje
 ./scripts/link-skills.sh ~/.cursor/skills   # or any other tool's folder
 ```
 
+Skills that ship scripts (`inspiration`) and the `dataviz-nudge` hook have tests:
+
+```bash
+pip install pytest && pytest
+```
+
 ## License
 
 This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+The `inspiration` skill reads its galleries live from their public endpoints and never copies them
+into this repository:
+
+- [dataviz-inspiration.com](https://www.dataviz-inspiration.com): catalog data licensed under
+  [CC BY 4.0](https://github.com/holtzy/dataviz-inspiration/blob/main/LICENSE);
+- [Dataviz Index](https://datavizindex.fr) by [WeDoData](https://wedodata.fr), from the
+  [*Buena Vista Data Club*](https://wedodata.beehiiv.com) newsletter: selection and editorial
+  comments © WeDoData. The agent reads them like a visitor would, paraphrases and links to them;
+  it does not republish them.
+
+Images in both galleries are screenshots of work by their respective authors: the agent may look
+at them, never reuse them.
 
 ## Resources
 
