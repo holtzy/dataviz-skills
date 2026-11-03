@@ -10,25 +10,14 @@
   },
   "plugins": [
     {
-      "name": "dataviz-design",
-      "description": "Tool-agnostic dataviz skills: chart type, color, maps",
+      "name": "dataviz-skills",
+      "description": "Dataviz skills: D3 + React, ggplot2, Matplotlib",
       "source": "./",
       "strict": false,
       "skills": [
-        "./dataviz-design/chart-type",
-        "./dataviz-design/color",
-        "./dataviz-design/maps"
-      ]
-    },
-    {
-      "name": "dataviz-tech",
-      "description": "Library-specific dataviz skills: D3 + React, ggplot2, Matplotlib",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./dataviz-tech/d3",
-        "./dataviz-tech/ggplot2",
-        "./dataviz-tech/matplotlib"
+        "./d3",
+        "./ggplot2",
+        "./matplotlib"
       ]
     }
   ]
