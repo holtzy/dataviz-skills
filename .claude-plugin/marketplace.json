@@ -11,14 +11,20 @@
   "plugins": [
     {
       "name": "dataviz-skills",
-      "description": "Dataviz skills: D3 + React, ggplot2, Matplotlib",
+      "description": "Dataviz skills: inspiration, D3 + React, ggplot2, Matplotlib",
       "source": "./",
       "strict": false,
       "skills": [
+        "./inspiration",
         "./d3",
         "./ggplot2",
         "./matplotlib"
       ]
+    },
+    {
+      "name": "dataviz-nudge",
+      "description": "Claude Code hook: before the agent writes chart or map code, make sure it has loaded the inspiration skill. Denies the first such call once per session; retries go through.",
+      "source": "./hooks/dataviz-nudge"
     }
   ]
 }

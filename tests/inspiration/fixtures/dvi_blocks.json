@@ -1,0 +1,140 @@
+[
+ {
+  "id": "1657c27b-e92c-4cbe-8bf6-362784b3b3e0",
+  "title": "Heatmap des temps de trajet à NYC",
+  "created_time": "2026-05-05T12:27:00.000Z",
+  "publication_date": "2026-10-01T12:00:00.000Z",
+  "section_dataviz_index": "S'inspirer",
+  "slug": "heatmap-des-temps-de-trajet-a-nyc-1657c27b-e92c-4cbe-8bf6-362784b3b3e0",
+  "source": "Anthony Castrio",
+  "source_url": "https://castrio.me/nyc/@40.72466,-73.87894?distance=40.68248%2C-73.93724",
+  "themes": [
+   {
+    "slug": "societe",
+    "label": "Société"
+   }
+  ],
+  "formats": [
+   {
+    "slug": "interactif-et-web",
+    "label": "Interactif et web"
+   }
+  ],
+  "types": [
+   {
+    "slug": "cartographies",
+    "label": "Cartographies"
+   },
+   {
+    "slug": "heatmaps",
+    "label": "Heatmaps"
+   }
+  ],
+  "tools": [],
+  "file_local_path": "1657c27b-e92c-4cbe-8bf6-362784b3b3e0/3c70bba3-a0e4-8016-9b17-f5fa490777a0/heatmap-nyc-anthony-castrio.gif",
+  "file_type": "gif",
+  "thumbnail": {
+   "path": "/files/1657c27b-e92c-4cbe-8bf6-362784b3b3e0/3c70bba3-a0e4-8016-9b17-f5fa490777a0/heatmap-nyc-anthony-castrio.gif",
+   "url": "https://prod-files-secure.s3.amazonaws.com/expiring"
+  },
+  "language": null
+ },
+ {
+  "id": "c5818333-d36a-474b-bf5f-1983cd7b1798",
+  "title": "Le rapport Meadows revisité",
+  "created_time": "2026-04-01T13:15:00.000Z",
+  "publication_date": "2026-10-01T12:00:00.000Z",
+  "section_dataviz_index": "S'inspirer",
+  "slug": "le-rapport-meadows-revisite-c5818333-d36a-474b-bf5f-1983cd7b1798",
+  "source": "The Guardian",
+  "source_url": "https://www.theguardian.com/environment/ng-interactive/2026/feb/09/economic-growth-carbon-emissions-impact-global-heating",
+  "themes": [
+   {
+    "slug": "climat-et-environnement",
+    "label": "Climat et environnement"
+   },
+   {
+    "slug": "societe",
+    "label": "Société"
+   }
+  ],
+  "formats": [
+   {
+    "slug": "enquete-data-driven",
+    "label": "Enquête data-driven"
+   },
+   {
+    "slug": "interactif-et-web",
+    "label": "Interactif et web"
+   }
+  ],
+  "types": [
+   {
+    "slug": "bulles-et-points",
+    "label": "Bulles et points"
+   },
+   {
+    "slug": "courbes-et-series",
+    "label": "Courbes et séries"
+   }
+  ],
+  "tools": [],
+  "file_local_path": "c5818333-d36a-474b-bf5f-1983cd7b1798/3c70bba3-a0e4-800b-aa0d-cab148bc418d/economic-growth-carbon-emissions-impact-global-heating-the-guardian.gif",
+  "file_type": "gif",
+  "thumbnail": {
+   "path": "/files/c5818333-d36a-474b-bf5f-1983cd7b1798/3c70bba3-a0e4-800b-aa0d-cab148bc418d/economic-growth-carbon-emissions-impact-global-heating-the-guardian.gif",
+   "url": "https://prod-files-secure.s3.amazonaws.com/expiring"
+  },
+  "language": null
+ },
+ {
+  "id": "f34bb123-65d9-45a7-8ed0-47cb8929eec4",
+  "title": "Isotype Explorer",
+  "created_time": "2026-04-01T13:02:00.000Z",
+  "publication_date": "2026-10-01T12:00:00.000Z",
+  "section_dataviz_index": "Se former",
+  "slug": "isotype-explorer-f34bb123-65d9-45a7-8ed0-47cb8929eec4",
+  "source": "RJ Andrews",
+  "source_url": "https://isotype.infowetrust.com/#/?sort=oldest&types=bar",
+  "themes": [],
+  "formats": [],
+  "types": [
+   {
+    "slug": "bulles-et-points",
+    "label": "Bulles et points"
+   },
+   {
+    "slug": "cartographies",
+    "label": "Cartographies"
+   },
+   {
+    "slug": "courbes-et-series",
+    "label": "Courbes et séries"
+   },
+   {
+    "slug": "donnees-illustrees",
+    "label": "Données illustrées"
+   },
+   {
+    "slug": "histogrammes-et-barres",
+    "label": "Histogrammes et barres"
+   },
+   {
+    "slug": "pie-charts-et-donuts",
+    "label": "Pie charts et donuts"
+   },
+   {
+    "slug": "schemas-et-flowcharts",
+    "label": "Schémas et flowcharts"
+   }
+  ],
+  "tools": [],
+  "file_local_path": "f34bb123-65d9-45a7-8ed0-47cb8929eec4/3c70bba3-a0e4-8039-82b9-f98d52260990/image.png",
+  "file_type": "png",
+  "thumbnail": {
+   "path": "/files/f34bb123-65d9-45a7-8ed0-47cb8929eec4/3c70bba3-a0e4-8039-82b9-f98d52260990/image.png",
+   "url": "https://prod-files-secure.s3.amazonaws.com/expiring"
+  },
+  "language": null
+ }
+]

@@ -10,10 +10,10 @@ The skills follow the open [Agent Skills](https://agentskills.io) standard (`SKI
 
 ### Available skills
 
+- **[inspiration](./inspiration/)** - Before drawing, find 3–5 published charts to borrow ideas from, searched across [dataviz-inspiration.com](https://www.dataviz-inspiration.com) and [Dataviz Index](https://datavizindex.fr), and cite them (co-authored with [Joël Gombin](https://github.com/joelgombin))
 - **[d3](./d3/)** - Build charts with D3.js inside React / Next.js
 - **[ggplot2](./ggplot2/)** - Create publication-ready charts in R with ggplot2
 - **[matplotlib](./matplotlib/)** - Create publication-ready charts in Python with Matplotlib and Seaborn
-- **inspiration** - Find ideas and references for your chart
 - **caveats** - Avoid the most common dataviz mistakes
 
 ### How to use
@@ -24,7 +24,7 @@ The skills follow the open [Agent Skills](https://agentskills.io) standard (`SKI
 npx skills add holtzy/dataviz-skills
 ```
 
-In Claude Code, you can also use `/plugin marketplace add holtzy/dataviz-skills`.
+In Claude Code, you can also use `/plugin marketplace add holtzy/dataviz-skills`. The marketplace also offers `dataviz-nudge`, a hook that makes the agent load the inspiration skill before it writes chart code.
 
 **Claude.ai**: download a skill zip from the [latest release](https://github.com/holtzy/dataviz-skills/releases/latest) and upload it in your settings ([guide](https://support.claude.com/en/articles/12512198-creating-custom-skills)).
 
