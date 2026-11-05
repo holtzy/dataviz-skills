@@ -11,11 +11,12 @@
   "plugins": [
     {
       "name": "dataviz-skills",
-      "description": "Dataviz skills: inspiration, D3 + React, ggplot2, Matplotlib",
+      "description": "Dataviz skills: inspiration, roast-my-chart, D3 + React, ggplot2, Matplotlib",
       "source": "./",
       "strict": false,
       "skills": [
         "./inspiration",
+        "./roast-my-chart",
         "./d3",
         "./ggplot2",
         "./matplotlib"

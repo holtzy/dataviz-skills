@@ -1,0 +1,29 @@
+name: Sync caveats
+
+# Keep roast-my-chart/references/caveats.md in sync with the flashcards repo.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download caveats.md
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/holtzy/dataviz-caveat-flashcards/main/caveats.md \
+            -o roast-my-chart/references/caveats.md
+
+      - name: Commit if changed
+        run: |
+          git diff --quiet && { echo "Already up to date"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Sync caveats.md from the flashcards repo"
+          git push
