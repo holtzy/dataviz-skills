@@ -21,9 +21,9 @@ jobs:
           for file in */SKILL.md; do
             name="$(dirname "$file")"
             skills+=("$name")
-            zip -r "dist/${name}.zip" "$name" -x '*.DS_Store'
+            zip -r "dist/${name}.zip" "$name" -x '*.DS_Store' '*/tests/*' '*/dataviz-nudge/*'
           done
-          zip -r dist/dataviz-skills-all.zip "${skills[@]}" -x '*.DS_Store'
+          zip -r dist/dataviz-skills-all.zip "${skills[@]}" -x '*.DS_Store' '*/tests/*' '*/dataviz-nudge/*'
 
       - name: Publish release
         env:

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Symlink every skill of this repo into a skills folder, so a `git pull` updates them everywhere.
-# Usage: ./scripts/link-skills.sh [target_dir]   (default: ~/.claude/skills)
+# Usage: ./.github/link-skills.sh [target_dir]   (default: ~/.claude/skills)
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"

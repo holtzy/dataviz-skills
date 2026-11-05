@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-HOOK = Path(__file__).resolve().parents[2] / "hooks/dataviz-nudge/hooks/nudge.py"
+HOOK = Path(__file__).resolve().parents[1] / "dataviz-nudge/hooks/nudge.py"
 
 MPL_CODE = "import geopandas as gpd\nimport matplotlib.pyplot as plt\ngdf.plot(column='abst', ax=ax)\nplt.savefig('carte.png')\n"
 
