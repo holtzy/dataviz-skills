@@ -8,6 +8,6 @@ Give it an image, plotting code (ggplot2, Matplotlib, D3…), or both. It checks
 
 ## 📚 The flashcards
 
-[`references/caveats.md`](references/caveats.md) is a copy of the flashcards text, synced every week from the [flashcards repo](https://github.com/holtzy/dataviz-caveat-flashcards). Browse the cards at [dataviz-inspiration.com/caveats](https://www.dataviz-inspiration.com/caveats).
+[`references/caveats.md`](references/caveats.md) is a copy of the flashcards text from the [flashcards repo](https://github.com/holtzy/dataviz-caveat-flashcards). Browse the cards at [dataviz-inspiration.com/caveats](https://www.dataviz-inspiration.com/caveats).
 
 The flashcards are released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), not MIT: see [LICENSE.txt](LICENSE.txt).
