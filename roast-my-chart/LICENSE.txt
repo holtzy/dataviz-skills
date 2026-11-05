@@ -1,0 +1,9 @@
+This folder is covered by two licenses.
+
+- SKILL.md and README.md are released under the MIT License of this repository (see ../LICENSE).
+
+- references/caveats.md is a copy of the Data to Viz caveat flashcards text
+  (https://github.com/holtzy/dataviz-caveat-flashcards), released under
+  CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/).
+  Free for non-commercial use, with credit to Data to Viz (https://www.data-to-viz.com).
+  For commercial use, please get in touch.

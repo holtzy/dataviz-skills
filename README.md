@@ -14,7 +14,7 @@ The skills follow the open [Agent Skills](https://agentskills.io) standard (`SKI
 - **[d3](./d3/)** - Build charts with D3.js inside React / Next.js
 - **[ggplot2](./ggplot2/)** - Create publication-ready charts in R with ggplot2 (co-authored with [Cédric Scherer](https://www.cedricscherer.com))
 - **[matplotlib](./matplotlib/)** - Create publication-ready charts in Python with Matplotlib and Seaborn (co-authored with [Joseph Barbier](https://github.com/JosephBARBIERDARNAL))
-- **caveats** - Avoid the most common dataviz mistakes
+- **[roast-my-chart](./roast-my-chart/)** - Review a finished chart against the 61 [Data to Viz caveat flashcards](https://github.com/holtzy/dataviz-caveat-flashcards) and get a prioritized list of fixes
 
 ### How to use
 
