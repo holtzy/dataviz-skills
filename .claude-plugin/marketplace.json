@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "dataviz-skills",
-      "description": "Dataviz skills: inspiration, roast-my-chart, D3 + React, ggplot2, Matplotlib",
+      "description": "Dataviz skills: inspiration, roast-my-chart, D3 + React, ggplot2, Matplotlib, new dataviz project",
       "source": "./",
       "strict": false,
       "skills": [
@@ -19,7 +19,8 @@
         "./roast-my-chart",
         "./d3",
         "./ggplot2",
-        "./matplotlib"
+        "./matplotlib",
+        "./new-dataviz-project"
       ]
     },
     {

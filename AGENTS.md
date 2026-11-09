@@ -9,3 +9,4 @@ This repository contains data visualization skills. If your tool does not load `
 | d3 | Building a chart with D3.js inside React / Next.js. | [d3/SKILL.md](d3/SKILL.md) |
 | ggplot2 | Creating or styling a chart with ggplot2 in R. | [ggplot2/SKILL.md](ggplot2/SKILL.md) |
 | matplotlib | Creating or styling a chart with Matplotlib / Seaborn in Python. | [matplotlib/SKILL.md](matplotlib/SKILL.md) |
+| new-dataviz-project | Creating a new web dataviz project (Vite, React, TypeScript, D3, shadcn/ui, Tailwind, GitHub Pages). | [new-dataviz-project/SKILL.md](new-dataviz-project/SKILL.md) |

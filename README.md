@@ -12,6 +12,7 @@ You can stay up to date with my skills by [signing up to the newsletter](https:/
 - **[ggplot2](./ggplot2/)** - Publication-ready charts in R with ggplot2 (co-authored with Cédric Scherer)
 - **[matplotlib](./matplotlib/)** - Publication-ready charts in Python with Matplotlib and Seaborn (co-authored with Joseph Barbier)
 
+- **[new-dataviz-project](./new-dataviz-project/)** - Start a new web dataviz project: React, TypeScript, D3, shadcn/ui and Tailwind, with a default barplot, ready to deploy on GitHub Pages
 - **[roast-my-chart](./roast-my-chart/)** - Review a finished chart against the 61 [Data to Viz caveat flashcards](https://github.com/holtzy/dataviz-caveat-flashcards) and get a prioritized list of fixes
 - **[inspiration](./inspiration/)** - Before drawing, find 3–5 published charts to borrow ideas from, searched across [dataviz-inspiration.com](https://www.dataviz-inspiration.com) and [Dataviz Index](https://datavizindex.fr) (co-authored with Joël Gombin)
 
