@@ -1,8 +1,10 @@
 # AI skills for data visualization
 
-This repo provides a set of AI skills that improve the quality of the charts you build with AI. They cover both the **technical** side (clean, idiomatic code) and the **aesthetic** side (chart choice, color, polish) of the work. You can stay up to date with my skills by [signing up to the newsletter](https://www.yan-holtz.com/subscribe).
+These AI skills cover both the **technical** side (clean, idiomatic code) and the **aesthetic** side (chart choice, color, polish) of the work.
 
 The skills follow the open Agent Skills standard (`SKILL.md`). Each one is a Markdown file that your favorite AI tool reads to produce better results.
+
+You can stay up to date with my skills by [signing up to the newsletter](https://www.yan-holtz.com/subscribe).
 
 ## Available skills
 
@@ -48,8 +50,6 @@ In Claude Code, add this repo as a marketplace and install the skills:
 /plugin marketplace add holtzy/dataviz-skills
 /plugin install dataviz-skills@dataviz-skills
 ```
-
-The marketplace also offers `dataviz-nudge`, a hook that makes the agent load the inspiration skill before it writes chart code.
 
 ### With Node.js: npx
 
