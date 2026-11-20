@@ -10,7 +10,7 @@ You are an expert Typst and Gribouille assistant. Follow these rules strictly wh
 ## Call Shape
 
 ```typst
-#import "@preview/gribouille:0.8.0": *
+#import "@preview/gribouille:0.9.0": *
 
 #plot(
   data: penguins,
@@ -116,9 +116,11 @@ layers: (geom-point(),),
 - Don't pass constants as columns: `aes(x: 0)` fails. Add a constant column, or use a layer argument.
 - Don't use `hjust` on text geoms: place a label with `anchor: "west"`.
 - Don't read `geom-point(size:)` as a diameter: it is a radius, as in `circle(radius:)`.
-- Don't give a layer its own `data` without `x` and `y` columns: it draws nothing, with no error. Map them in the layer, or set `inherit-aes: false` with a full mapping.
-- Don't pass a discrete `y` to `geom-col()`: it draws nothing. Use a discrete `x` and `coord-flip()`.
-- Don't expect `annotate()` or `geom-blank()` to leave the axes alone: they train the scales, so set `limits` to keep the range.
+- Don't give a layer its own `data` without the columns it inherits from the plot mapping: it fails and names them. Map them in the layer, or set `inherit-aes: false` with a full mapping.
+- Don't put the category on `y` for bars: `geom-col()` fails, and `geom-bar()` draws an empty panel. Map the category to `x` and add `coord-flip()`.
+- Don't expect `annotate()` or `geom-blank()` to leave the axes alone: their positions train the x and y scales, so set `limits` to keep the range.
+- Don't pass a colour constant as a string: `colour: "red"` fails. Use `red` or `rgb("#d55e00")`.
+- Don't be surprised by a `(missing)` legend key, axis level, or facet panel: `none` cells on a discrete scale form their own level. Filter those rows, or drop them with `missing-translate: false` on the scale: `scales(colour: scale-okabe-ito(missing-translate: false))`.
 - Don't rely on the default fill of `geom-area()` or `geom-ribbon()` for overlapping groups: it is opaque, so pass `alpha:`.
 - Don't pass `expand:` to `scale-log10()`: use `scale-continuous(transform: "log10", expand: ...)`.
 - Don't draw maps with points and `coord-fixed()`: Gribouille has no geo geoms.
